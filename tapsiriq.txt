@@ -107,3 +107,16 @@ operatoruna alternativ olan && operatoru movcuddur. Bel?likl? && operatoru ?g?r
 soldak? operand false olarsa sag t?r?f? umumiyy?tl? ?baxm?r?. ?g?r sol operand true
 olarsa, m?lumdur ki, sagdak? hokm?n n?z?r? al?nacaq. Bu f?rqi asag?dak? proqram daha
 goz?l ifad? edir. Bu proqramda b d?yis?ninin a – n?n bol?ni olub-olmad?g? yoxlan?l?r.
+
+Asag?dak? c?dv?l riyazi operatorlar? t?qdim edir:
+
+?vv?lc?d?n f?rz ed?k ki, A d?yis?nin? 10 , B d?yis?nin? 20 m?nims?dilmisdir.
+operator          t?svir                                          n?tic?  
++                 iki ?d?in c?mi                                  A+B=30
+-                 iki ?d?in f?rqi                                 A-B=-10
+*                 iki ?d?in hasili                                 A*B=200
+/                 bolm? ?m?                                        B/A=2
+%                 bolun?nin bol?ni bol-d?n  al?nan qal?q
+++                d?yis?nin qiym?tinin 1 vahid-vahid artmas?      A++ = 11
+--                d?yis?nin qiym?tinin 1 vahid-vahid azalmas?     A--=9
+
