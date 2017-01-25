@@ -57,10 +57,10 @@ parcas?nda qiym?t al?r.
 
 K?rs tipl?r asag?dak?lard?r:
 1. float - 32 bit h?cm? malikdir. Verguld?n sonra 6 m?rt?b? d?qiqliyin? malikdir.
-Isar?lidir, y?ni h?m m?nfi h?m d? musb?t qiym?tl?r ala bil?r.
-2. double – 64 bit h?cm? var, verguld?n sonra 14 m?rt?b? d?qiqliy? malikdir. Isar?lidir.
+Isar?lidir, -3.4 x 10^38 to + 3.4 x 10^38 parçasında qiymətlər alır.
+2. double – 64 bit h?cm? var, verguld?n sonra 14 m?rt?b? d?qiqliy? malikdir. Isar?lidir.(+/-)5.0 x 10^-324 --- (+/-)1.7 x 10^308 parçasında qiymətlər alır.
 3. decimal – 128 bit h?cmi var, verguld?n sonra 27 m?rt?b? d?qiqliy? malikdir v?
-isar?lidir.
+isar?lidir.(-7.9 x 10^28 ----- 7.9 x 10^28  parçasında qiymətlər alır.
 
  Simvol tipl?r asag?dak?lard?r:
 1. char – bu tip ozund? bir t?k Unicode massivin? daxil olan simvolu saxlaya bil?r v? 16
@@ -107,8 +107,7 @@ var? Onsuz da cavab false olacaq. Niy? ?lav? vaxt itirib sagdak? operand?n cavab
 hesablanmas? ucun ?m?liyyat yerin? yetir?k? M?hz bu isi yerin? yetirm?k ucun &
 operatoruna alternativ olan && operatoru movcuddur. Bel?likl? && operatoru ?g?r
 soldak? operand false olarsa sag t?r?f? umumiyy?tl? ?baxm?r?. ?g?r sol operand true
-olarsa, m?lumdur ki, sagdak? hokm?n n?z?r? al?nacaq. Bu f?rqi asag?dak? proqram daha
-goz?l ifad? edir. Bu proqramda b d?yis?ninin a – n?n bol?ni olub-olmad?g? yoxlan?l?r.
+olarsa, m?lumdur ki, sagdak? hokm?n n?z?r? al?nacaq.
 
 
 Asag?dak? c?dv?l riyazi operatorlar? t?qdim edir:
@@ -122,4 +121,55 @@ operator          t?svir                                          n?tic?
 %                 bolun?nin bol?ni bol-d?n  al?nan qal?q
 ++                d?yis?nin qiym?tinin 1 vahid-vahid artmas?      A++ = 11
 --                d?yis?nin qiym?tinin 1 vahid-vahid azalmas?     A--=9
+
+
+İndi isə şərt operatorlarına nəzər salaq.
+Şərt operatorları aşağıdakılardır:
+if 
+if ... else 
+if ... else if...
+
+İf operatoru işləmə prinsipi :
+İf -dən sonra mötərizə daxilində bizə lazım olan şərt qoyulur.Əgər şərt ödənərsə,bu zaman statement(bəyənat,sorğu) icra olunur.Sintaksisi aşağıdakı şəkildədir:
+if (expression){
+   Statement(s) to be executed if expression is true
+}
+if ... else operatoru işləmə prinsipi :
+
+if.. else operatoru if operatorunun daha geniş formasıdır.Yəni,bu operator müxtəlif yoxlama yolları vasitəsilə sorğuları icra etməyə imkan verir.Sİntaksinə nəzər salsaq daha dəqiq görə bilərik : 
+
+if (expression){
+   Statement(s) to be executed if expression is true
+}
+
+else{
+   Statement(s) to be executed if expression is false
+}
+İf -dən sonra mötərizə daxilində bizə lazım olan şərt qoyulur.Əgər şərt ödənərsə,bu zaman statement(bəyənat,sorğu) icra olunur.Əgər ödənməzsa, bu zaman else blokunun içərisindəki sorğu icra olunur.
+
+if ... else if...operatoru işləmə prinsipi :
+Bu operator şərt blogunun içərisində müxtəlif şərtlər yaratmağa və icra etməyə imkan verir.Sİntaksisinə nəzər salaq:
+
+if (expression 1){
+   Statement(s) to be executed if expression 1 is true
+}
+
+else if (expression 2){
+   Statement(s) to be executed if expression 2 is true
+}
+
+else if (expression 3){
+   Statement(s) to be executed if expression 3 is true
+}
+
+else{
+   Statement(s) to be executed if no expression is true
+}
+
+Burada növbə ilə bütün şərtlərə baxılır.Əgər 1-ci ödənərsə, sorğu icra olunur,nəticəni ekrana çıxarır.Ödənməzsə,növbəti bloqdakı şərtə baxilir, ödənərsə,eynilə orğu icra olunur,nəticəni ekrana çıxarır.Əgər verilən şərtlərin heç biri ödənməzsa,bu halda else bloqundakı əmri ekrana çıxarır.
+
+
+
+
+
 
