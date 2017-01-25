@@ -20,9 +20,11 @@ d?yis?n uz?rind? hans? ?m?liyyatlar? yerin? yetir? bil?c?yimizi t?yin ed?n bir m
 anlay?sd?r. Tutaq ki, tam (int) tipind? bir d?yis?n t?yin etdik.
 Dem?li bu d?yis?n ozund? tam ?d?dl?ri saxlaya bil?c?k, cunki onun tipi tamd?r.
 Bir d?yis?ni asag?dak? kimi t?yin olunur.
-<Tip> <d?yis?nin ad?>;
+<Tip> <d?yis?nin ad?>;
+
 Burada tip, d?yis?nin tipidir. M?s?l?n, int, string, byte v? s. String tipd? ada adl? bir
-d?yis?ni asag?dak? kimi t?yin edirl?r:
+d?yis?ni asag?dak? kimi t?yin edirl?r:
+
 String ada;
 
 D?y?r tipl?ri (valuable types)
@@ -39,33 +41,34 @@ C# - da d?y?r tipl?ri 4 yer? bolunur:
 4. M?ntiqi tipl?r
 
 Tam tipl?r asag?dak?lard?r:
-1. byte – 8 bit (1 bayt) h?cm? maikdir [0-255] parcas?nda tam qiym?t al?r.
-2. sbyte – 8 bit h?cm? malikdir, [-128-127] parcas?nda tam qiym?t al?r.
-3.ushort – isar?siz (unsigned) tipdir, 16 bit h?cm? malikdir v? [0 - 65535] parcas?nda
+1. byte â€“ 8 bit (1 bayt) h?cm? maikdir [0-255] parcas?nda tam qiym?t al?r.
+2. sbyte â€“ 8 bit h?cm? malikdir, [-128-127] parcas?nda tam qiym?t al?r.
+3.ushort â€“ isar?siz (unsigned) tipdir, 16 bit h?cm? malikdir v? [0 - 65535] parcas?nda
 qiym?t al?r.
-3. short – isr?lidir, 16 bit h?cmi var, [-32,768 - 32,767] parcas?nda tam qiym?t al?r.
-4. uint – isar?siz (unsigned) tap tipdir, 32 bit h?cm? malik [0 - 4,294,967,295]
+3. short â€“ isr?lidir, 16 bit h?cmi var, [-32,768 - 32,767] parcas?nda tam qiym?t al?r.
+4. uint â€“ isar?siz (unsigned) tap tipdir, 32 bit h?cm? malik [0 - 4,294,967,295]
 parcas?nda qiym?t al?r.
-5. int – 32 tam h?cmi var, [-2,147,483,648 -- 2,147,483,647] parcas?nda qiym?t al?r.
-6. ulong – 64 bit isar?siz v? [0 - 18,446,744,073,709,551,615] parcas?nda qiym?t al?r.
-7. long – 64 bit isar?li tipdir v? [-923,372,036,854,775,808 -
-9,223,372,036,854,775,807] parcas?nda qiym?t al?r.
+5. int â€“ 32 tam h?cmi var, [-2,147,483,648 -- 2,147,483,647] parcas?nda qiym?t al?r.
+6. ulong â€“ 64 bit isar?siz v? [0 - 18,446,744,073,709,551,615] parcas?nda qiym?t al?r.
+7. long â€“ 64 bit isar?li tipdir v? [-923,372,036,854,775,808 -
+9,223,372,036,854,775,807] parcas?nda qiym?t al?r.
+
 
 
 K?rs tipl?r asag?dak?lard?r:
 1. float - 32 bit h?cm? malikdir. Verguld?n sonra 6 m?rt?b? d?qiqliyin? malikdir.
 Isar?lidir, y?ni h?m m?nfi h?m d? musb?t qiym?tl?r ala bil?r.
-2. double – 64 bit h?cm? var, verguld?n sonra 14 m?rt?b? d?qiqliy? malikdir. Isar?lidir.
-3. decimal – 128 bit h?cmi var, verguld?n sonra 27 m?rt?b? d?qiqliy? malikdir v?
+2. double â€“ 64 bit h?cm? var, verguld?n sonra 14 m?rt?b? d?qiqliy? malikdir. Isar?lidir.
+3. decimal â€“ 128 bit h?cmi var, verguld?n sonra 27 m?rt?b? d?qiqliy? malikdir v?
 isar?lidir.
 
  Simvol tipl?r asag?dak?lard?r:
-1. char – bu tip ozund? bir t?k Unicode massivin? daxil olan simvolu saxlaya bil?r v? 16
+1. char â€“ bu tip ozund? bir t?k Unicode massivin? daxil olan simvolu saxlaya bil?r v? 16
 bit h?cm? malikdir.
 
 
 M?ntiqi tipl?r asag?dak?lard?r:
-bool – bu tip? aid d?yis?n sad?c? ?true? v? ya ?false? (dogru v? ya yanl?s)
+bool â€“ bu tip? aid d?yis?n sad?c? ?true? v? ya ?false? (dogru v? ya yanl?s)
 qiym?tl?rind?n birini ala bil?r. M?ntiqi ?m?liyyatlarda istifad? olunur, bir s?rtin duzgun
 olub olmamag?n? mu?yy?nl?sdirm?k v? s. Hallarda ozunu gost?rir.
  Bir d?yis?n? m?nims?dil?n qiym?tl?r, h?min d?yis?nin tipi il? uyumlu olmal?d?r.
@@ -83,8 +86,7 @@ ustum? sad?c? b?caqla g?lm?m?lisiniz. ?g?r ikisi d? varsa onda ikisini d? g?tirm
 ?g?r m?n cuml?ni ?m?tb?x? gedib m?n? bir b?caq V? YA bir c?ng?l g?tirin? s?klind?
 ifad? etmis olsayd?m, onda m?tb?xd? b?caq yoxdursa m?n? c?ng?li, ?g?r c?ng?l
 yoxdursa onda b?cag?, ?g?r h?r ikisi varsa h?r ikisini g?tirm?li idiniz. M?ntiqi operatorlar
-da bu m?ntiql? isl?yir. ?g?r bir azca diskret riyaziyyat anlay?s?n?z varsa, onda m?ntiqi
-operatorlar? siz art?q bildiniz. C# -da m?ntiqi operatorlar asag?dak?lard?r:
+da bu m?ntiql? isl?yir. C# -da m?ntiqi operatorlar asag?dak?lard?r:
 Operator M?nas? Diskret riyaziyyatda
 & V? Konyunksiya
 | V? YA Dizyunksiya
@@ -106,7 +108,8 @@ hesablanmas? ucun ?m?liyyat yerin? yetir?k? M?hz bu isi yerin? yetirm?k ucun &
 operatoruna alternativ olan && operatoru movcuddur. Bel?likl? && operatoru ?g?r
 soldak? operand false olarsa sag t?r?f? umumiyy?tl? ?baxm?r?. ?g?r sol operand true
 olarsa, m?lumdur ki, sagdak? hokm?n n?z?r? al?nacaq. Bu f?rqi asag?dak? proqram daha
-goz?l ifad? edir. Bu proqramda b d?yis?ninin a – n?n bol?ni olub-olmad?g? yoxlan?l?r.
+goz?l ifad? edir. Bu proqramda b d?yis?ninin a â€“ n?n bol?ni olub-olmad?g? yoxlan?l?r.
+
 
 Asag?dak? c?dv?l riyazi operatorlar? t?qdim edir:
 
